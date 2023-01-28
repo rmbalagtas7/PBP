@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PBP</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Piggy Bank of the philippines</h1>
+    <div class="row">
+      <div class="column">
+        <div class="container">
+          <h2>Transaction</h2>
+          <label for="">Enter Amount: </label>
+          <input type="text" id="amount" /><br />
+          <label for="">Transaction Type: </label>
+          <select name="transactionType" id="transactionType">
+            <option value="Withdraw">Withdraw</option>
+            <option value="Deposit">Deposit</option></select
+          ><br />
+          <button id="btnTransac" class="btn">Transact</button>
+
+          <button id="btnCheck" class="btn">Check Balance</button><br />
+        </div>
+        <span id="validation"></span><br />
+
+        <p id="balance"></p>
+      </div>
+      <div class="column">
+        <h2>Transaction History</h2>
+        <button id="btnShow" class="btn">Clear History</button>
+
+        <ul id="history"></ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
